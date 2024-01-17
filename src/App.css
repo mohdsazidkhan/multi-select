@@ -1,0 +1,48 @@
+body{
+  margin: 20px
+}
+.multi-select-dropdown {
+  position: relative;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px;
+  background: aliceblue;
+  width: 80%;
+  display: none;
+}
+
+input:focus + .options-list{
+  display: block;
+}
+
+.options-list li {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.selected-options {
+  position: absolute;
+  top: -1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selected-option {
+  background-color: #ddd;
+  padding: 4px 8px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
